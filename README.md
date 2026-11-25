@@ -22,7 +22,19 @@ You can also give `console`, `gui` or `both` as the program argument to skip the
 
 **Console menu:** search a station by name (linear and binary), sort the connections by distance (merge sort and selection sort), search with the binary search tree and with the hash map, find the stations inside the rectangle between two stations, and find the shortest path with Dijkstra or A*.
 
+The menu and the shortest path from Deventer to Hengelo with Dijkstra:
+
+![Console with Dijkstra](src/documentation/images/TerminalDijkstra.png)
+
+The same path with A*:
+
+![Console with A*](src/documentation/images/TerminalAstar.png)
+
 **Window:** the stations are shown on a map of the Netherlands. Enter two station codes, pick Dijkstra or A* and the path is drawn on the map. The map can be zoomed with the mouse wheel and moved by dragging, and clicking a station shows its name and code.
+
+The shortest path from Oldenzaal to Den Haag Centraal with Dijkstra:
+
+![Window with the map](src/documentation/images/Window.png)
 
 ## How it is put together
 

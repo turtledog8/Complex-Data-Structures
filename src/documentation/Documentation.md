@@ -1,5 +1,5 @@
 # DOCUMENTATION FOR COMPLEX DATA STRUCTURES
-## Stoyan Hristozov 
+## Stoyan Hristozov
 Student number: 527573
 --------------------------------------------------------------------------------------------------------------------------
 # Table of Contents
@@ -53,7 +53,6 @@ Student number: 527573
         3. [Methods](#methods-6)
     4. [Interface: CustomMap<K, V>](#interface-custommapk-v)
         1. [Methods](#methods-7)
-        2. [Additional Methods](#additional-methods-1)
 
 7. [BinarySearchTree](#binarysearchtree)
     1. [Description](#description-6)
@@ -67,53 +66,51 @@ Student number: 527573
 8. [MinHeap](#minheap)
     1. [Description](#description-7)
     2. [Class: MinHeap<T extends Comparable<T>>](#class-minheapt-extends-comparablet)
-        1. [Fields](#fields-3)
+        1. [Fields](#fields-4)
         2. [Constructors](#constructors-7)
         3. [Methods](#methods-10)
-    3. [Additional Note](#additional-note)
+    3. [Additional Note](#note)
 
 ## Algorithms
 
 9. [MergeSort](#mergesort)
-    1. [Description](#description-8)
+    1. [Description](#description-9)
     2. [Class: MergeSort<T extends Comparable<T>>](#class-mergesortt-extends-comparablet)
-        1. [Constructors](#constructors-8)
-        2. [Methods](#methods-11)
-    3. [Time Complexity and Space Complexity](#time-complexity-and-space-complexity)
+        1. [Constructors](#constructors-9)
+        2. [Methods](#methods-12)
+    3. [Time Complexity and Space Complexity](#time-complexity-on-log-n)
 
 10. [Dijkstra Algorithm](#dijkstra-algorithm)
-    1. [Description](#description-9)
+    1. [Description](#description-10)
     2. [Class: DijkstraAlgorithm<T>](#class-dijkstraalgorithmt)
-        1. [Fields](#fields-4)
-        2. [Constructors](#constructors-9)
-        3. [Methods](#methods-12)
-    3. [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-1)
-    4. [Efficiency](#efficiency)
+        1. [Fields](#fields-5)
+        2. [Constructors](#constructors-10)
+        3. [Methods](#methods-13)
+    3. [Time Complexity and Space Complexity](#complexity)
+    4. [Efficiency](#efficiency-and-justification)
 
 11. [A* Algorithm](#a-algorithm)
-    1. [Description](#description-10)
-    2. [Class: AStarAlgorithm<T>](#class-astar-algorithmt)
-        1. [Fields](#fields-5)
+    1. [Description](#description-11)
+    2. [Class: AStarAlgorithm<T>](#class-astaralgorithmt)
+        1. [Fields](#fields-6)
         2. [Nested Class: Node<K>](#nested-class-nodek)
-        3. [Constructors](#constructors-10)
-        4. [Methods](#methods-13)
-    3. [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-2)
-    4. [Efficiency](#efficiency-1)
+        3. [Constructors](#constructors-11)
+        4. [Methods](#methods-14)
+    3. [Time Complexity and Space Complexity](#complexity-1)
+    4. [Efficiency](#efficiency-and-justification-1)
 
 12. [Kruskal Algorithm](#kruskal-algorithm)
-    1. [Description](#description-11)
-    2. [Class: KruskalAlgorithm<T>](#class-kruskal-algorithmt)
+    1. [Description](#description-12)
+    2. [Class: KruskalAlgorithm<T>](#class-kruskalalgorithmt)
         1. [Nested Class: Edge<U>](#nested-class-edgeu)
-        2. [Constructors](#constructors-11)
-        3. [Methods](#methods-14)
-    3. [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-3)
-    4. [Efficiency](#efficiency-2)
+        2. [Constructors](#constructors-12)
+        3. [Methods](#methods-15)
+    3. [Time Complexity and Space Complexity](#time-complexity-oe--logv)
+    4. [Efficiency](#efficiency-and-justification-2)
 
 13. [Linear Search (`SearchStationByNameLinear()`)](#linear-search-searchstationbynamelinear)
-    1. [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-4)
 
 14. [Binary Search (`SearchStationByNameBinary()`)](#binary-search-searchstationbynamebinary)
-    1. [Time Complexity and Space Complexity](#time-complexity-and-space-complexity-5)
 
 ## Application
 
@@ -136,9 +133,9 @@ Student number: 527573
 
 --------------------------------------------------------------------------------------------------------------------------
 
-# MyArrayList 
+# MyArrayList
 
-## Location: 
+## Location:
 src/list/arrayLsit/MyArrayList.java
 
 ## Description:
@@ -210,7 +207,7 @@ The space complexity of `MyArrayList` is primarily determined by the internal `A
 --------------------------------------------------------------------------------------------------------------------------
 
 
-# MyLinkedList 
+# MyLinkedList
 
 ## Location:
 src/list/linkedlist/MyLinkedList.java
@@ -297,7 +294,7 @@ src/list/linkedlist/MyLinkedList.java
 
 -----------------------------------------------------------------------------------------------------------
 
-# MyDoublyLinkedList 
+# MyDoublyLinkedList
 
 ## Location:
 src/list/doublelinkedlist/MyDoublyLinkedList.java
@@ -620,7 +617,7 @@ src/AVLTree/AVLTree.java
 
 ---------------------------------------------------------------------------------------------------------
 
-# MyHashMap 
+# MyHashMap
 
 
 ## Location:
@@ -856,7 +853,7 @@ src/tree/binarytree/BinarySearchTree.java
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-# MinHeap 
+# MinHeap
 
 ## Location:
 src/tree/minheap/MinHeap.java
@@ -1022,7 +1019,7 @@ Since the coordinates have been provided I will defend this choice if I have to.
 - The space complexity of the selection sort algorithm is O(1) as it sorts the elements in-place.
 
 ## Visualisation:
-![SelectionSort Complexity](SelectionSortComplexity.png)
+![SelectionSort Complexity](images/SelectionSortComplexity.png)
 
 Functions:
 
@@ -1038,7 +1035,7 @@ Space Complexity: g(n) = 1
 - Selection sort is efficient for small datasets and is easy to implement. However, it has a higher time complexity compared to more advanced algorithms and is less suitable for large datasets.
 ---------------------------------------------------------------------------------------------------------------------------
 
-# MergeSort 
+# MergeSort
 
 ## Location:
 src/sorting/mergesort/MergeSort.java
@@ -1085,7 +1082,7 @@ src/sorting/mergesort/MergeSort.java
 - The space complexity of the merge sort algorithm is O(n) due to the additional space required for merging two halves.
 
 ## Visualisation:
-![Dijkstra Complexity](MergesortComplexity.png)
+![Dijkstra Complexity](images/MergesortComplexity.png)
 
 Functions:
 
@@ -1181,7 +1178,7 @@ Vertices and Edges:
 ### Therefore, the overall space complexity is O(V + E), where V is the number of vertices and E is the number of edges.
 
 ## Visualisation:
-![Dijkstra Complexity](DijkstraAstarComplexity.png)
+![Dijkstra Complexity](images/DijkstraAstarComplexity.png)
 
 Functions:
 Time complexity: f(V) = V * log(V)
@@ -1283,7 +1280,7 @@ src/traversal/astar/AStarAlgorithm.java
 ### Therefore, the overall space complexity is O(V + E), where V is the number of vertices and E is the number of edges.
 
 ## Visualisation:
-![Astar Complexity](DijkstraAstarComplexity.png)
+![Astar Complexity](images/DijkstraAstarComplexity.png)
 
 Functions:
 Time complexity: h(V) = V * log(V)
@@ -1306,7 +1303,7 @@ The strength of A* lies in its ability to efficiently explore the search space b
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-# Kruskal Algorithm 
+# Kruskal Algorithm
 
 ## Location:
 src/traversal/kruskal/KruskalAlgorithm.java
@@ -1380,7 +1377,7 @@ src/traversal/kruskal/KruskalAlgorithm.java
 ### Therefore, the overall space complexity is O(V + E), where V is the number of vertices and E is the number of edges.
 
 ## Visualisation:
-![Kruskal Complexity](KruskalComplexity.png)
+![Kruskal Complexity](images/KruskalComplexity.png)
 
 Functions:
 
@@ -1403,7 +1400,7 @@ Kruskal's algorithm provides a balance between simplicity and efficiency for fin
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-## Location: 
+## Location:
 src/Manager2.java
 
 ## Linear Search (`SearchStationByNameLinear()`)
@@ -1897,7 +1894,7 @@ This test class validates the functionality of the `AStarAlgorithm` class, which
 ### Additional Notes:
 - All test methods achieve code coverage of 100% (class, method and line).
 ---------------------------------------------------------------------------------------------------------------------------
-# DijkstraAlgorithmTest 
+# DijkstraAlgorithmTest
 
 ## Test Methods
 
